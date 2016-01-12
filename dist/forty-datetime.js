@@ -10,7 +10,7 @@
         name: '=?',
         placeholder: '=?'
       },
-      template: '<div class="input-group">' + '<input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="date" name="{{name}}" is-open="opened" placeholder="{{placeholder}}" ng-disabled="disabled" /><span class="input-group-btn"><button type="button" ng-disabled="disabled" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button></span></div>',
+      template: '<div class="input-group">' + '<input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="date" name="{{name}}" is-open="opened" placeholder="{{placeholder}}" ng-disabled="disabled" /><span class="input-group-btn"><button type="button" ng-disabled="disabled" class="btn btn-default" ng-click="open($event)"><i class="fa fa-calendar"></i></button></span></div>',
       link: function(scope, elem, attrs, ngModel) {
         var allowed_key_codes, applyMaskToArray, deleteInMask, delimiter, getDelimiterCountAtIndex, init, mask, ngModelCtrl, setCaretPosition, updateMask;
         allowed_key_codes = void 0;
