@@ -1,5 +1,5 @@
 (function() {
-  angular.module('fortyDate', []).directive("fortyDatePicker", function($filter, $window) {
+  angular.module('fortyDate', []).directive(['$filter', '$window', "fortyDatePicker", function($filter, $window) {
     return {
       require: "ngModel",
       restrict: "E",
@@ -221,6 +221,6 @@
         });
       }
     };
-  });
+  }]);
 
 }).call(this);
